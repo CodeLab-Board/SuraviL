@@ -1,0 +1,52 @@
+[
+  {
+    "id": "item-101",
+    "name": "Campus cotton tee",
+    "description": "Soft sage tee, lightly worn.",
+    "sellerId": "seller-1",
+    "category": "tops",
+    "price": 12,
+    "quantity": 2,
+    "size": "M"
+  },
+  {
+    "id": "item-102",
+    "name": "Striped rugby shirt",
+    "description": "Blue and cream stripes for cooler mornings.",
+    "sellerId": "seller-2",
+    "category": "tops",
+    "price": 22.5,
+    "quantity": 1,
+    "size": "L"
+  },
+  {
+    "id": "item-103",
+    "name": "Straight-leg jeans",
+    "description": "Classic indigo denim with roomy pockets.",
+    "sellerId": "seller-3",
+    "category": "bottoms",
+    "price": 28,
+    "quantity": 1,
+    "size": "30"
+  },
+  {
+    "id": "item-104",
+    "name": "Rain-ready jacket",
+    "description": "Lightweight navy shell for the walk to class.",
+    "sellerId": "seller-1",
+    "category": "outerwear",
+    "price": 35,
+    "quantity": 3,
+    "size": "S"
+  },
+  {
+    "id": "item-105",
+    "name": "Corduroy trousers",
+    "description": "Warm brown cords; this listing is sold out.",
+    "sellerId": "seller-2",
+    "category": "bottoms",
+    "price": 24,
+    "quantity": 0,
+    "size": "32"
+  }
+]
