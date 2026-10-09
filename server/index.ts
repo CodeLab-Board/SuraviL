@@ -1,6 +1,6 @@
 import express from 'express';
 import { readFile } from 'node:fs/promises';
-import type { CatalogItem } from '../src/types';
+import { CatalogItem } from '../src/types';
 
 const app = express();
 const itemsFile = new URL('./data/items.json', import.meta.url);
@@ -16,9 +16,16 @@ app.get('/api/items', async (req, res) => {
     ? req.query.category.trim().toLowerCase()
     : '';
 
-  // Question 2: validate category, loadItems(), filter, and respond.
-  // See README.md for the complete behavior. Replace this 501 response.
-  res.status(501).json({ error: 'Category browsing is not implemented yet.' });
+  if (!category) {
+    res.status(400).json({ error: 'A category is required.' });
+    return;
+  }
+
+  const items = await loadItems();
+  const matchingItems = items.filter(
+    item => item.category.trim().toLowerCase() === category && item.quantity > 0,
+  );
+  res.json({ items: matchingItems });
 });
 
 app.listen(3001, () => {

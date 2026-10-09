@@ -3,6 +3,11 @@ export interface CatalogItem {
   name: string;
   description: string;
   sellerId: string;
+  id: string;
+  category: string;
+  price: number;
+  quantity: number;
+  size: string;
 }
 
 export interface CatalogResponse {
